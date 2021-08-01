@@ -10,7 +10,25 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return ListView(
-      children: [headerBox(size), intoMySelft(size)],
+      children: [
+        headerBox(size),
+        intoMySelft(size),
+        Center(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 15.0),
+            child: Container(
+              width: size.width * 0.9,
+              child: Text(
+                'SKILLS',
+                style: GoogleFonts.fredokaOne(
+                  textStyle: TextStyle(
+                      color: Colors.black, letterSpacing: 2.5, fontSize: 30),
+                ),
+              ),
+            ),
+          ),
+        )
+      ],
     );
   }
 
@@ -100,17 +118,43 @@ class Body extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Row(
-                        children: [
-                          Icon(FontAwesomeIcons.github),
-                          Text(
-                            "GITHUB",
-                            style: GoogleFonts.varelaRound(
-                              textStyle:
-                                  TextStyle(color: Colors.black, fontSize: 15),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 12.0),
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(bottom: 5.0, right: 5),
+                              child: Icon(FontAwesomeIcons.github, size: 18),
                             ),
-                          ),
-                        ],
+                            Text(
+                              "GITHUB",
+                              style: GoogleFonts.mitr(
+                                textStyle: TextStyle(
+                                    color: Colors.black, fontSize: 15),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 12.0),
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(bottom: 5.0, right: 5),
+                              child: Icon(FontAwesomeIcons.globeAsia, size: 18),
+                            ),
+                            Text(
+                              "WEBSITE",
+                              style: GoogleFonts.mitr(
+                                textStyle: TextStyle(
+                                    color: Colors.black, fontSize: 15),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
