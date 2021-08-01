@@ -28,7 +28,7 @@ class Body extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            height: size.height * 0.35 - 25,
+            height: size.height * 0.32,
             decoration: BoxDecoration(
                 color: Colors.purple,
                 borderRadius: BorderRadius.only(
