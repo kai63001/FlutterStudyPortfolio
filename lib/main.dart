@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
         "PROFILE",
         style: GoogleFonts.fredokaOne(
           textStyle:
-              TextStyle(color: Colors.white, letterSpacing: 2.5, fontSize: 30),
+              TextStyle(color: Colors.white, letterSpacing: 2.5, fontSize: 18),
         ),
       ),
       backgroundColor: Colors.purple,

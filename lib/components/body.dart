@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:weak2/components/skills.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -13,21 +14,7 @@ class Body extends StatelessWidget {
       children: [
         headerBox(size),
         intoMySelft(size),
-        Center(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 15.0),
-            child: Container(
-              width: size.width * 0.9,
-              child: Text(
-                'SKILLS',
-                style: GoogleFonts.fredokaOne(
-                  textStyle: TextStyle(
-                      color: Colors.black, letterSpacing: 2.5, fontSize: 30),
-                ),
-              ),
-            ),
-          ),
-        )
+        Skills(size: size)
       ],
     );
   }
