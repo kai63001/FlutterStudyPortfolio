@@ -19,6 +19,92 @@ class Body extends StatelessWidget {
         Skills(size: size),
         FrameWork(size: size),
         Other(size: size),
+        Padding(
+          padding: const EdgeInsets.only(top: 15.0),
+          child: Container(
+            decoration: BoxDecoration(color: Colors.purple),
+            child: Padding(
+              padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+              child: Center(
+                child: Container(
+                  width: size.width * 0.9,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'INFO',
+                        style: GoogleFonts.fredokaOne(
+                          textStyle: TextStyle(
+                              color: Colors.white,
+                              letterSpacing: 2.5,
+                              fontSize: 18),
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            RichText(
+                              text: TextSpan(
+                                style: GoogleFonts.mitr(
+                                  textStyle: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 15),
+                                ),
+                                children: const <TextSpan>[
+                                  TextSpan(
+                                      text: 'Address : ',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold)),
+                                  TextSpan(text: '177 Village No.1 Banplama, Banplama, Suphanburi'),
+                                ],
+                              ),
+                            ),
+                            RichText(
+                              text: TextSpan(
+                                style: GoogleFonts.mitr(
+                                  textStyle: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 15),
+                                ),
+                                children: const <TextSpan>[
+                                  TextSpan(
+                                      text: 'Phone : ',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold)),
+                                  TextSpan(text: '+66 93 665 2528'),
+                                ],
+                              ),
+                            ),RichText(
+                              text: TextSpan(
+                                style: GoogleFonts.mitr(
+                                  textStyle: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 15),
+                                ),
+                                children: const <TextSpan>[
+                                  TextSpan(
+                                      text: 'Email : ',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold)),
+                                  TextSpan(text: '62021506@up.ac.th'),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
         Container(
           height: 50,
         )

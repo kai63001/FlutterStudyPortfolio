@@ -59,9 +59,10 @@ class _SkillsState extends State<Skills> {
   }
 
   Padding boxSkills(data) {
-    var leftP = data["n"] == 0 ? 25.0 : 0.0;
+    var leftP = data["n"] == 0 ? widget.size.width * 0.05 : 0.0;
+    var rightP = data["n"] == 6 ? widget.size.width * 0.05 : 8.0;
     return Padding(
-      padding: EdgeInsets.only(left: leftP, right: 8),
+      padding: EdgeInsets.only(left: leftP, right: rightP),
       child: Container(
           height: 100,
           width: 100,
