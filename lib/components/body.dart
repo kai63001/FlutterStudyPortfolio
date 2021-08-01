@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:weak2/components/framework.dart';
 import 'package:weak2/components/skills.dart';
 
 class Body extends StatelessWidget {
@@ -14,7 +15,8 @@ class Body extends StatelessWidget {
       children: [
         headerBox(size),
         intoMySelft(size),
-        Skills(size: size)
+        Skills(size: size),
+        FrameWork(size: size),
       ],
     );
   }
